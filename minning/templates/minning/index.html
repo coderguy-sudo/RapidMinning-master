@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link rel="icon" href="{% static 'img/logos.png'%}">
+
+    <title>Rapid-Mining</title>
+
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,100' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet"  href="{% static 'css/agency.min.css' %}" />
+    <link rel="stylesheet"  href="{% static 'css/packagess.css' %}" />
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Rapid-Mining</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item" style="padding-top:7px;">
+              <a class="btn btn-primary  text-uppercase js-scroll-trigger" href="{% url 'minning:registration' %}">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To Rapid-Mining</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'minning:login' %}">Log In</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section style="background: #fff;" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" style="border-right: 0.1px solid #fed136; margin-top:50px; margin-bottom:50px;">
+            <center><h2 class="section-heading text-uppercase">About Us</h2></center>
+            <p style="text-align:justify" class="text-muted">Rapid-Mining is a cloud mining service created by the specialists in the field of cryptocurrency.
+In a short time, Rapid-Mining became one of the largest providers of computational power for mining bitcoin, ethereum, dash and other cryptocurrencies.
+As our cryptocurrency mining company and its user base grew, new mining farms were built up and several additional people hired, specifically programmers and engineers.
+The team of Rapid-Mining has always put the task of making mining accessible not only for cryptoenthusiasts but also for common users.
+The current members of our bitcoin mining team come from different scientific disciplines, but our common faith in cryptocurrencies has brought us together.
+Through tremendous work made by the engineers, developers and other specialists of the company we have succeeded in providing the tremendous service to our users.
+We are all strong believers in the future of digital currencies and we love being part of this growing community!</p>
+          </div>
+
+          <div class="col-lg-6" style="margin-top:50px; margin-bottom:50px;">
+            <center><h2 class="section-heading text-uppercase">What is Mining</h2></center>
+            <p style="text-align:justify" class="text-muted">Cloud (or remote) mining – is the process of using hardware power to mine cryptocurrency (such as Bitcoin or Litecoin) remotely. This mining model came to existence due to the fact that the increasing difficulty of mining has made it unprofitable for mining enthusiasts to mine Bitcoins at home.
+              Cloud mining gives people a unique opportunity to begin mining cryptocurrency without the need for a large initial investment in hardware or technical knowledge. Despite the simplicity of the cloud mining model, it is worth elaborating on a few details, specifically it’s important to highlight that remote mining comes in two forms: hosted or cloud based mining.
+            The first form of remote mining is remote hosting. This model suits users with a high level mining experience and know-how and who require a high degree of control over their mining hardware.
+            The second, and more accessible model of remote mining is Cloud Mining, whereby a miner purchases a part of the mining power of hardware hosted and owned by a Cloud Mining services provider.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Features</h2>
+            <h3 class="section-subheading text-muted">Our features are unbeatable</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <i class="fa fa-plug fa-5x uf pulse rounded-circle center"></i>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Instant Connect</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">The mining starts immediately after confirmed payment. First payouts within one month.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <i class="fa fa-btc fa-5x uf pulse"></i>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Instant Withdrawal</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Choose the amount to withdraw and receive it instantly.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <i class="fa fa-cogs fa-5x uf pulse"></i>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Currency Allocation</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">You can decide which currency you want your miner to mine. This allows you to find the most profitable return.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <i class="fa fa-calculator fa-5x uf pulse"></i>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Fixed Fees</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">No hidden fees or comissions. Every single transaction is visible to you.
+                    It is all done without any offline hassle such as electricity, hosting, issue, installation and troubleshooting.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be a Part
+                    <br>Of Rapid
+                    <br>Mining!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+        .price {
+            list-style-type: none;
+            border: 1px solid #eee;
+            margin: 0;
+            padding: 0;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .price:hover {
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+        }
+
+        .price .header {
+            background-color: #fed136;
+            color: white;
+            font-size: 25px;
+        }
+
+        .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .price .grey {
+            font-size: 50px;
+            color: #fed136;
+        }
+    </style>
+
+    <section id="packages">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Packages</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+              <div class="columns">
+                <ul class="price">
+                  <li class="header">Gold</li>
+                  <li class="grey bg-light"><b>$ 300</b></li>
+                  <li class="text-muted">6 Month Mining Contract</li>
+                  <li class="text-muted">Monthly Reward will be<br> 50 to 100 dollars worth<br> of crypto currency you
+              <br>choose for mining</li>
+                  <li class="text-muted">First Reward will be<br> started after
+            the two months<br> of buying the package</li>
+                  <li class="text-muted">No Maintenance Fee</li>
+                  <li class="grey bg-light"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'minning:registration' %}">Buy Now</a></li>
+                </ul>
+              </div>
+            </div>
+
+          <div class="col-lg-4">
+              <div class="columns">
+                <ul class="price">
+                  <li class="header">Platinum</li>
+                  <li class="grey bg-light"><b>$ 600</b></li>
+                  <li class="text-muted">6 Month Mining Contract</li>
+                  <li class="text-muted">Monthly Reward will<br> 100 to 200 dollars worth<br> of crypto currency you
+              <br>choose for mining</li>
+                  <li class="text-muted">First Reward will be<br> started after
+            the two months<br> of buying the package</li>
+                  <li class="text-muted">No Maintenance Fee</li>
+                  <li class="grey bg-light"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'minning:registration' %}">Buy Now</a></li>
+                </ul>
+              </div>
+            </div>
+
+          <div class="col-lg-4">
+              <div class="columns">
+                <ul class="price">
+                  <li class="header">Diamond</li>
+                  <li class="grey bg-light"><b>$ 900</b></li>
+                  <li class="text-muted">6 Month Mining Contract</li>
+                  <li class="text-muted">Monthly Reward will<br> 150 to 300 dollars worth<br> of crypto currency you
+              <br>choose for mining</li>
+                  <li class="text-muted">First Reward will be<br> started after
+            the two months<br> of buying the package</li>
+                  <li class="text-muted">No Maintenance Fee</li>
+                  <li class="grey bg-light"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'minning:registration' %}">Buy Now</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">Do you have any requests or questions? Please contact us.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Rapid-Mining 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'js/contact_me.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/agency.min.js' %}"></script>
+
+
+  </body>
+
+</html>
+
+
+
+
+
+
